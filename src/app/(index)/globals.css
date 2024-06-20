@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* {
+  font: inherit;
+}
+:root {
+  --color-black: #000000;
+  --color-dark-grey: #7d7d7d;
+  --color-grey: #e5e5e5;
+  --color-light-grey: #f3f3f3;
+  --color-white: #ffffff;
+
+  --ff: 'Libre Baskerville', serif;
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --fs-50: 0.5625rem;
+  --fs-100: 10px;
+  --fs-200: 12px;
+  --fs-300: 13px;
+  --fs-400: 14px;
+  --fs-500: 15px;
+  --fs-600: 18px;
+  --fs-700: 24px;
+  --fs-800: 56px;
+  --fs-900: 100px;
+  --fs-1000: 200px;
+
+  --section-padding: 1.5rem;
+
+  font-size: 16px;
+}
+@media screen and (min-width: 688px) {
+  /*768px*/
+  :root {
+    --section-padding: 2.5rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  /*1440px*/
+}
+
+body {
+  font-family: var(--ff);
+}
