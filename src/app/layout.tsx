@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Libre_Baskerville } from 'next/font/google';
-import './globals.css';
+import '@/styles/globals.css';
 import Header from '@/components/header/header';
 import styles from './layout.module.css';
 
