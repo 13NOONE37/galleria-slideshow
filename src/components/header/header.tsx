@@ -7,6 +7,7 @@ import Logo from '@/icons/logo';
 import { usePathname, useRouter } from 'next/navigation';
 import Unmuted from '@/icons/unmuted';
 import Muted from '@/icons/muted';
+import Link from 'next/link';
 
 const Header = () => {
   const router = useRouter();
@@ -48,9 +49,9 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <button className={styles.logo} onClick={() => router.push('/')}>
+      <Link className={styles.logo} href={'/'}>
         <Logo />
-      </button>
+      </Link>
       <div className={styles['header--controls']}>
         <audio ref={audioRef} loop>
           <source src="/background-music.mp3" type="audio/mpeg" />
@@ -58,7 +59,7 @@ const Header = () => {
         <button
           className={styles.playButton}
           onClick={isAudioPlaying ? pauseAudio : playAudio}
-          aria-roledescription="Play/mute background music"
+          aria-label="Play/mute background music"
         >
           {isAudioPlaying ? <Unmuted /> : <Muted />}
         </button>
