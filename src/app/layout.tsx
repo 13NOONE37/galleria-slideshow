@@ -13,6 +13,9 @@ const libre_baskerville = Libre_Baskerville({
 export const metadata: Metadata = {
   title: 'Galleria',
   description: `Discover a curated collection of the world's most iconic artworks at Galleria. Explore masterpieces from Van Gogh, Vermeer, Picasso, and more. Dive into art history with detailed descriptions and stunning visuals.`,
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_BASE_URL,
+  },
 };
 
 export default function RootLayout({

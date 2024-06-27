@@ -26,7 +26,7 @@ export function generateMetadata({ params }: pageProps): Metadata {
 
   return {
     alternates: {
-      canonical: painting.url,
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${painting.url}`,
     },
     title: painting.title,
     description: painting.body.raw,
