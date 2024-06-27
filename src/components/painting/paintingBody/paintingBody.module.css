@@ -24,7 +24,6 @@
 }
 
 @media screen and (min-width: 688px) {
-  /*768px*/
   .container {
     margin: auto;
     margin-top: 4rem;
@@ -43,7 +42,6 @@
   }
 }
 @media screen and (min-width: 1410px) {
-  /*1440px*/
   .container {
     margin: unset;
     float: right;

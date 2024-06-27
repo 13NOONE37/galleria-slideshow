@@ -76,7 +76,6 @@
   opacity: 0.75;
 }
 @media screen and (min-width: 688px) {
-  /*768px*/
   .gallery--slideButton {
     font-size: var(--fs-200);
     line-height: 1.25;
@@ -98,5 +97,4 @@
   }
 }
 @media screen and (min-width: 1410px) {
-  /*1440px*/
 }

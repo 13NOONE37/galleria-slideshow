@@ -35,7 +35,7 @@ const Header = () => {
 
     const handlePlay = () => setIsAudioPlaying(true);
     const handlePause = () => setIsAudioPlaying(false);
-    audio.volume = 0.1;
+    audio.volume = 0.5;
 
     audio.addEventListener('play', handlePlay);
     audio.addEventListener('pause', handlePause);

@@ -24,16 +24,18 @@ export function generateMetadata({ params }: pageProps): Metadata {
   );
   if (!painting) return {};
 
+  const pageDescription = painting.body.raw.substring(0, 150);
+
   return {
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${painting.url}`,
     },
     title: painting.title,
-    description: painting.body.raw,
+    description: pageDescription,
     keywords: `${painting.artist.name}, ${painting.title}`,
     openGraph: {
       title: painting.title,
-      description: painting.body.raw,
+      description: pageDescription,
       images: painting.hero.small.src,
       url: painting.url,
       type: 'website',
@@ -41,7 +43,7 @@ export function generateMetadata({ params }: pageProps): Metadata {
     twitter: {
       card: 'summary_large_image',
       title: painting.title,
-      description: painting.body.raw,
+      description: pageDescription,
       images: painting.hero.small.src,
     },
   };

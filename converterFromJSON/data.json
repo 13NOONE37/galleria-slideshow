@@ -268,5 +268,41 @@
       },
       "gallery": "./assets/the-swing/gallery.jpg"
     }
+  },
+  {
+    "name": "Stańczyk",
+    "year": 1862,
+    "description": "Stańczyk is a famous painting by Polish artist Jan Matejko, depicting the court jester Stańczyk in a melancholic pose. The scene shows Stańczyk sitting alone in a dimly lit room, deep in thought, while a lively ball takes place in the background. This painting is notable for its historical context and the portrayal of the jester as a wise and introspective figure rather than a mere entertainer. It is currently held in the Warsaw National Museum in Poland.",
+    "source": "https://en.wikipedia.org/wiki/Stańczyk",
+    "artist": {
+      "image": "./assets/stanczyk/artist.jpg",
+      "name": "Jan Matejko"
+    },
+    "images": {
+      "thumbnail": "./assets/stanczyk/thumbnail.jpg",
+      "hero": {
+        "small": "./assets/stanczyk/hero-small.jpg",
+        "large": "./assets/stanczyk/hero-large.jpg"
+      },
+      "gallery": "./assets/stanczyk/gallery.jpg"
+    }
+  },
+  {
+    "name": "Battle of Grunwald",
+    "year": 1878,
+    "description": "The Battle of Grunwald is one of Jan Matejko's most famous and monumental works. This grand painting depicts the historic Battle of Grunwald (1410) between the Kingdom of Poland and the Teutonic Order. The painting is renowned for its intricate details and dramatic composition. Measuring a massive 426 cm by 987 cm (14 ft by 32 ft), it captures the chaos and intensity of one of medieval Europe's largest battles. The painting is currently held in the Warsaw National Museum in Poland.",
+    "source": "https://en.wikipedia.org/wiki/Battle_of_Grunwald_(Matejko)",
+    "artist": {
+      "image": "./assets/battle-of-grunwald/artist.jpg",
+      "name": "Jan Matejko"
+    },
+    "images": {
+      "thumbnail": "./assets/battle-of-grunwald/thumbnail.jpg",
+      "hero": {
+        "small": "./assets/battle-of-grunwald/hero-small.jpg",
+        "large": "./assets/battle-of-grunwald/hero-large.jpg"
+      },
+      "gallery": "./assets/battle-of-grunwald/gallery.jpg"
+    }
   }
 ]
