@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Link className={styles.logo} href={'/'}>
+      <Link className={styles.logo} href={'/'} aria-label="Go to home page">
         <Logo />
       </Link>
       <div className={styles['header--controls']}>
