@@ -10,7 +10,7 @@
     grid-template-rows: 89px 1fr;
   }
 }
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1410px) {
   /*1440px*/
   .container {
     grid-template-rows: 129px 1fr;

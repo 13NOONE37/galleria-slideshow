@@ -1,0 +1,178 @@
+.painting {
+  width: 100%;
+  aspect-ratio: 327/280;
+  position: relative;
+  margin-bottom: 7.375rem; /*".description" transform*/
+}
+.viewButton {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+.heroImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transform: translateY(7.375rem);
+  width: 85%;
+
+  display: flex;
+  flex-direction: column;
+}
+.credits {
+  padding: 1.5rem;
+
+  background-color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.artist--picture {
+  margin-left: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.lightbox {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  background-color: rgba(0, 0, 0, 0.85);
+
+  display: grid;
+  place-items: center;
+
+  visibility: collapse;
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+}
+body:has(.lightbox__visible) {
+  overflow: hidden;
+}
+.lightbox__visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.lightbox--content {
+  padding: var(--section-padding);
+
+  display: grid;
+  place-items: center;
+}
+.lightbox--close {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+
+  justify-self: flex-end;
+  margin-bottom: 2.0625rem;
+  transition: opacity 0.25s var(--transition--buttons_1);
+}
+
+.lightbox--imageContainer {
+  transform: scale(0);
+  transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.lightbox--imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+.lightbox__visible .lightbox--imageContainer {
+  transform: scale(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .lightbox--close:hover {
+    opacity: 0.25;
+  }
+}
+
+@media screen and (min-width: 688px) {
+  .painting {
+    width: 65%;
+    aspect-ratio: 475/560;
+    margin-bottom: unset;
+  }
+  .viewButton {
+    top: unset;
+    bottom: 1rem;
+  }
+  .lightbox--close {
+    margin-bottom: 2.5625rem;
+  }
+
+  .description {
+    position: absolute;
+    width: unset;
+
+    left: unset;
+    right: 0;
+
+    bottom: unset;
+    top: 0;
+
+    transform: translateX(13.3125rem);
+
+    align-items: flex-end;
+  }
+  .credits {
+    padding: 0 0 4.1875rem 4.0625rem;
+
+    gap: 1.5rem;
+  }
+  .title {
+    width: 23.75rem;
+  }
+
+  .artist--picture {
+    margin-left: unset;
+    margin-right: 3.4375rem;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 1410px) {
+  .painting {
+    width: 55%;
+  }
+
+  .description {
+    height: 100%;
+    position: absolute;
+    width: unset;
+
+    left: unset;
+    right: 0;
+
+    bottom: unset;
+    top: 0;
+
+    transform: unset;
+    transform: translateX(23.75rem);
+
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .artist--picture {
+    margin-right: 13.875rem;
+  }
+}

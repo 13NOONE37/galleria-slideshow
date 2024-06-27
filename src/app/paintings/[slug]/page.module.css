@@ -1,0 +1,23 @@
+.container {
+  padding: var(--section-padding);
+  padding-bottom: calc(4.5rem + var(--section-padding));
+
+  width: min(100%, var(--section-width));
+  margin: auto;
+
+  display: grid;
+  grid-template-rows: auto auto;
+}
+@media screen and (min-width: 688px) {
+  .container {
+    padding-bottom: calc(6rem + var(--section-padding));
+  }
+}
+@media screen and (min-width: 1410px) {
+  /*1440px*/
+  .container {
+    padding-top: 6.25rem;
+    grid-template-rows: unset;
+    grid-template-columns: 855px 1fr;
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+  column-gap: var(--section-padding) !important;
+}
+.container > div {
+  row-gap: var(--section-padding) !important;
+}
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.thumbnail--content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.84));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.4375rem;
+
+  transition: background-color 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@media (hover: hover) and (pointer: fine) {
+  .thumbnail:hover .thumbnail--content {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  /*768px*/
+}
+@media screen and (min-width: 1410px) {
+  /*1440px*/
+}

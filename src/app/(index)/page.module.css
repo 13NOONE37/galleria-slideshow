@@ -1,0 +1,5 @@
+.galleryContainer {
+  width: min(100%, var(--section-width));
+  padding: var(--section-padding);
+  margin: auto;
+}
